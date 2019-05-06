@@ -22,6 +22,7 @@ export class SliderComponent implements OnInit {
   sliders = [
     {
       bgColor: "#42a5f5",
+      slug: "help-ice-bear-to-fight",
       imagePath: "../../../assets/images/ice-bear.png",
       title: "Help Ice Bear To Fight!",
       desc:
@@ -35,6 +36,7 @@ export class SliderComponent implements OnInit {
     },
     {
       bgColor: "#e61e2b",
+      slug: "coca-cola-is-here-to-help",
       imagePath: "../../../assets/images/coca-cola.png",
       title: "Coca Cola is here to help!",
       desc: "Together we can help protect their home",
@@ -47,6 +49,7 @@ export class SliderComponent implements OnInit {
     },
     {
       bgColor: "#4cb5ab",
+      slug: "wwf-always-the-first",
       imagePath: "../../../assets/images/wwf.png",
       title: "WWF Always the First!",
       desc: "Prevent Global Warming. To save their Home!",

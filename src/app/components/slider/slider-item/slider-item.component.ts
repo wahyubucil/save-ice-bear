@@ -6,6 +6,7 @@ import { Component, OnInit, Input } from "@angular/core";
   styleUrls: ["./slider-item.component.scss"]
 })
 export class SliderItemComponent implements OnInit {
+  @Input() slug: string;
   @Input() imagePath: string;
   @Input() title: string;
   @Input() desc: string;
