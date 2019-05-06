@@ -1,13 +1,16 @@
 <div class="slider-item__container">
   <div class="slider-item__content">
-    <img [src]="imagePath" alt="" />
+    <img [src]="imagePath" class="animated {{ animations.image }}" />
   </div>
   <div class="slider-item__content">
-    <h2>{{ title }}</h2>
-    <p>
+    <h2 class="animated {{ animations.title }}">{{ title }}</h2>
+    <p class="animated {{ animations.desc }}">
       {{ desc }}
     </p>
-    <a routerLink="/detail" class="slider-item__project-info">
+    <a
+      routerLink="/detail"
+      class="slider-item__project-info animated {{ animations.projectInfo }}"
+    >
       Click for Project Info <span></span>
     </a>
   </div>

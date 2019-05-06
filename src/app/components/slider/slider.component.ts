@@ -8,6 +8,7 @@ import { Component, OnInit } from "@angular/core";
 export class SliderComponent implements OnInit {
   // Use config from the Swiper docs
   config = {
+    speed: 700,
     pagination: {
       el: ".slider__pagination",
       type: "bullets",
@@ -24,19 +25,37 @@ export class SliderComponent implements OnInit {
       imagePath: "../../../assets/images/ice-bear.png",
       title: "Help Ice Bear To Fight!",
       desc:
-        "Ice Bear not quiet! Ice Bear and We Bare Bears Team Ready To Fight!"
+        "Ice Bear not quiet! Ice Bear and We Bare Bears Team Ready To Fight!",
+      animations: {
+        image: "fadeInUp",
+        title: "fadeInDown",
+        desc: "fadeInLeft",
+        projectInfo: "fadeInRight"
+      }
     },
     {
       bgColor: "#e61e2b",
       imagePath: "../../../assets/images/coca-cola.png",
       title: "Coca Cola is here to help!",
-      desc: "Together we can help protect their home"
+      desc: "Together we can help protect their home",
+      animations: {
+        image: "fadeInLeft",
+        title: "fadeInUp",
+        desc: "fadeInRight",
+        projectInfo: "fadeInDown"
+      }
     },
     {
       bgColor: "#4cb5ab",
       imagePath: "../../../assets/images/wwf.png",
       title: "WWF Always the First!",
-      desc: "Prevent Global Warming. To save their Home!"
+      desc: "Prevent Global Warming. To save their Home!",
+      animations: {
+        image: "fadeInDown",
+        title: "fadeInRight",
+        desc: "fadeInDown",
+        projectInfo: "fadeInLeft"
+      }
     }
   ];
 

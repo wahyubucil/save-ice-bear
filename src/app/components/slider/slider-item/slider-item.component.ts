@@ -9,6 +9,7 @@ export class SliderItemComponent implements OnInit {
   @Input() imagePath: string;
   @Input() title: string;
   @Input() desc: string;
+  @Input() animations: object;
 
   constructor() {}
 
