@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-detail",
@@ -8,9 +9,14 @@ import { Component, OnInit } from "@angular/core";
 export class DetailComponent implements OnInit {
   loaded: boolean = false;
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {
     setTimeout(() => (this.loaded = true), 300);
+  }
+
+  close(event) {
+    this.loaded = false;
+    setTimeout(() => this.router.navigateByUrl("/"), 300);
   }
 }
