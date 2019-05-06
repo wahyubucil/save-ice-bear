@@ -6,7 +6,14 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./slider.component.scss"]
 })
 export class SliderComponent implements OnInit {
-  swiperConfig: SwiperOptions = {};
+  // Use config from the Swiper docs
+  config = {
+    pagination: {
+      el: ".slider__pagination",
+      type: "bullets",
+      clickable: true
+    }
+  };
 
   sliders = [
     {
