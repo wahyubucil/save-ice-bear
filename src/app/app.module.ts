@@ -9,9 +9,10 @@ import { SliderComponent } from "./components/slider/slider.component";
 import { HeaderComponent } from "./partials/header/header.component";
 import { SliderItemComponent } from './components/slider/slider-item/slider-item.component';
 import { DetailComponent } from './pages/detail/detail.component';
+import { DetailFormComponent } from './pages/detail/detail-form/detail-form.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, SliderComponent, HeaderComponent, SliderItemComponent, DetailComponent],
+  declarations: [AppComponent, HomeComponent, SliderComponent, HeaderComponent, SliderItemComponent, DetailComponent, DetailFormComponent],
   imports: [BrowserModule, AppRoutingModule, SwiperModule],
   providers: [],
   bootstrap: [AppComponent]

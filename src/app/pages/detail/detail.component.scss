@@ -1,16 +1,57 @@
 .detail {
-  background: #fff;
   height: 100vh;
   left: 0;
   position: absolute;
   top: 0;
+  width: 100%;
+
+  &--loaded .detail-content {
+    transform: scaleX(1);
+  }
+}
+
+.detail-content {
+  background: #fff;
+  height: 100%;
+  overflow: auto;
+  padding: 68px 40px;
+  position: absolute;
+  right: 0;
+  top: 0;
   transform: scaleX(0);
   transform-origin: right center;
   transition: transform 0.3s ease-in-out;
-  width: 100%;
+  width: 65%;
   z-index: 9999;
 
-  &--loaded {
-    transform: scaleX(1);
+  &__centered {
+    margin: auto;
+    width: 66.67%;
+  }
+
+  &__title {
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__image {
+    display: block;
+    margin-top: 60px;
+    width: 100%;
+  }
+
+  &__description {
+    margin-top: 60px;
+  }
+
+  p {
+    font-size: 1.25rem;
+    line-height: 1.5;
   }
 }
