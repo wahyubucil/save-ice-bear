@@ -1,8 +1,12 @@
 header {
+  align-items: center;
+  display: flex;
   left: 0;
+  justify-content: space-between;
   padding: 24px;
   position: fixed;
   top: 0;
+  width: 100%;
   z-index: 999;
 
   @media only screen and (max-width: 575px) {
@@ -16,6 +20,24 @@ header {
       color: #fff;
       font-size: 1.5rem;
       text-decoration: none;
+    }
+  }
+
+  nav {
+    a {
+      color: #fff;
+      font-size: 1.25rem;
+      opacity: 1;
+      text-decoration: none;
+      transition: opacity 0.3s ease-in-out;
+
+      &:first-child {
+        margin-right: 36px;
+      }
+
+      &:hover {
+        opacity: 0.5;
+      }
     }
   }
 }
