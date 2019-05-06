@@ -25,9 +25,10 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
               "node_modules/normalize.css/normalize.css",
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/swiper/dist/css/swiper.css"
             ],
-            "scripts": [],
+            "scripts": ["node_modules/swiper/dist/js/swiper.js"],
             "es5BrowserSupport": true
           },
           "configurations": {
