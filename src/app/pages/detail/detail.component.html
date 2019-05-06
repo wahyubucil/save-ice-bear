@@ -1,4 +1,7 @@
 <section class="detail" [ngClass]="{ 'detail--loaded': loaded }">
+  <div class="detail-close-box" (click)="close($event)">
+    <span>&times;</span>
+  </div>
   <div class="detail-content">
     <div class="detail-content__centered">
       <div class="detail-content__title">

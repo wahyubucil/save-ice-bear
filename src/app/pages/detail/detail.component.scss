@@ -1,12 +1,38 @@
 .detail {
+  display: flex;
   height: 100vh;
   left: 0;
   position: absolute;
   top: 0;
   width: 100%;
+  z-index: 9999;
 
-  &--loaded .detail-content {
+  &--loaded .detail-content,
+  &--loaded .detail-close-box {
     transform: scaleX(1);
+  }
+}
+
+.detail-close-box {
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.3s ease-in-out;
+  width: 35%;
+
+  span {
+    cursor: pointer;
+    color: #fff;
+    font-size: 3rem;
+    opacity: 1;
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 }
 
@@ -15,14 +41,11 @@
   height: 100%;
   overflow: auto;
   padding: 68px 40px;
-  position: absolute;
-  right: 0;
-  top: 0;
+  position: relative;
   transform: scaleX(0);
   transform-origin: right center;
   transition: transform 0.3s ease-in-out;
   width: 65%;
-  z-index: 9999;
 
   &__centered {
     margin: auto;
