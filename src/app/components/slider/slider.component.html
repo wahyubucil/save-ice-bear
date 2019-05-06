@@ -1,11 +1,17 @@
 <section class="slider">
   <swiper [config]="swiperConfig">
     <div class="swiper-wrapper">
-      <div class="swiper-slide" style="background-color: #42a5f5;">
-        <app-slider-item></app-slider-item>
+      <div
+        class="swiper-slide"
+        *ngFor="let slider of sliders"
+        [ngStyle]="{ backgroundColor: slider.bgColor }"
+      >
+        <app-slider-item
+          [imagePath]="slider.imagePath"
+          [title]="slider.title"
+          [desc]="slider.desc"
+        ></app-slider-item>
       </div>
-      <div class="swiper-slide" style="background-color: #e61e2b"></div>
-      <div class="swiper-slide" style="background-color: green;"></div>
     </div>
   </swiper>
 </section>
