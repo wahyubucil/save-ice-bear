@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from "@angular/core";
+import { Component, OnInit, OnDestroy, ViewEncapsulation } from "@angular/core";
 import { ActivatedRoute, Router } from "@angular/router";
 import { ProjectData } from "./project.data";
 import { Project } from "src/app/models/project.model";
@@ -6,7 +6,8 @@ import { Project } from "src/app/models/project.model";
 @Component({
   selector: "app-detail",
   templateUrl: "./detail.component.html",
-  styleUrls: ["./detail.component.scss"]
+  styleUrls: ["./detail.component.scss"],
+  encapsulation: ViewEncapsulation.None
 })
 export class DetailComponent implements OnInit, OnDestroy {
   private loaded: boolean = false;
